@@ -1,0 +1,33 @@
+## Code Book
+This code book describes the variables, data, and transformations performed to clean the data for the project. The data 
+used in this project is from the Human Activity Recognition Using Smartphones Data Set.
+
+## Data Source
+The data used in this project comes from the Human Activity Recognition Using Smartphones Data Set. More information about
+the data can be found at UCI Machine Learning Repository.
+
+## Variables
+subjectID: An identifier for the subject who performed the activity. Ranges from 1 to 30.
+activityID: An identifier for the activity performed by the subject. Ranges from 1 to 6, each corresponding to a specific 
+activity type.
+activityType: Descriptive label for the activity performed, corresponding to the activityID.
+##Other variables: These variables represent the measurements related to mean and standard deviation of various features 
+collected from smartphone sensors. The names of these variables are self-explanatory and based on the feature names 
+provided in the original data set.
+
+## Transformations
+Merging Datasets: The training and test datasets were read and combined to form one dataset. The training and test data 
+were merged along with activity and subject information.
+Extracting Mean and Standard Deviation: Only the measurements related to mean and standard deviation were extracted from 
+the dataset.
+Descriptive Activity Names: Descriptive activity names were added to the dataset based on the activity ID.
+Labeling Variables: Descriptive variable names were assigned to the dataset columns.
+Creating Tidy Dataset: A new tidy dataset was created by aggregating the data based on subject and activity and calculating
+the mean of each variable for each combination.
+
+## Output
+The output of the project is a tidy data set file named tidySet.txt. This file contains the aggregated data with the 
+average of each variable for each activity and subject.
+
+## Github Repository
+The script used for data collection, cleaning, and transformation can be found in the GitHub repository.
